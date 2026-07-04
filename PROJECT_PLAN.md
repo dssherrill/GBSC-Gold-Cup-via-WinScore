@@ -5,8 +5,8 @@
 The Greater Boston Soaring Club (GBSC) runs a season-long "Gold Cup" soaring contest:
 https://www.soargbsc.net/gold_cup_contest
 
-Scoring is done manually by the club's contest manager using WinScore (a Windows desktop
-scoring application). The contest manager will periodically export a JSON file reflecting
+The club's contest manager (Phil) produces scores using the SSA's WinScore application 
+running on Windows computer. The contest manager will periodically export a JSON file reflecting
 the current leaderboard. This project automates the display of that leaderboard on the
 club's Drupal website (soargbsc.net) by fetching the JSON and updating a Drupal page,
 with no manual web-editing step required after the initial setup.
@@ -24,11 +24,10 @@ with no manual web-editing step required after the initial setup.
 - Reimplementing WinScore's scoring logic in Python
 - Any changes to the contest manager's existing WinScore workflow
 
-The out-of-scope items were discussed at length and remain technically viable. The
-decision to descope them reflects the practical reality that the JSON+cron approach
-delivers a useful leaderboard with far less development effort.
-A separate planning document exists covering the full scoring app design if that phase
-is ever revisited.
+The out-of-scope items were discussed at length. They were descoped because the 
+JSON+cron approach delivers a useful leaderboard with far less development effort.
+A separate planning document exists covering the full scoring app design if that 
+phase is ever revisited.
 
 ## Architecture
 
@@ -138,7 +137,7 @@ All submitted flights for each pilot, including non-scoring flights (i.e. a pilo
 1. ✅ `Flights of` changed from comma-separated string to array of date strings
 2. ✅ Date format normalized to `YYYY-MM-DD` throughout (was `YYYY/MM/DD` in flight
    detail records)
-3. ⏳ `TOC` format confirmed as always `HH:MM:SS` (awaiting confirmation)
+3. ⏳ `TOC` format confirmed as always `HH:MM:SS`
 
 ## Leaderboard page design (HTML rendered by cron script)
 
@@ -187,6 +186,7 @@ Responsibilities:
 - Fetch JSON from the contest manager's published URL
 - Validate top-level structure (abort and log if `scoring_summary` or
   `flights_grouped_by_pilot` keys are missing, or if `generated_at` is absent)
+- Exit if `generated_at` is unchanged
 - Render HTML (standings table + flight detail tables)
 - Call drush to update the Drupal node body
 - Log success/failure with timestamp (to a local log file)
