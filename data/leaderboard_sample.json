@@ -1,0 +1,257 @@
+{
+  "scoring_summary": [
+    {
+      "Pilot": "David Joyce",
+      "Score (best three)": 2481,
+      "Flights of": ["2026-05-12", "2026-06-16", "2026-06-24"]
+    },
+    {
+      "Pilot": "Glen Kelley",
+      "Score (best three)": 1884,
+      "Flights of": ["2026-04-26", "2026-06-24"]
+    },
+    {
+      "Pilot": "Eric Foertsch",
+      "Score (best three)": 1459,
+      "Flights of": ["2026-04-24", "2026-06-16"]
+    },
+    {
+      "Pilot": "David Sherrill",
+      "Score (best three)": 1381,
+      "Flights of": ["2026-04-24", "2026-06-24"]
+    },
+    {
+      "Pilot": "Cathy Keller",
+      "Score (best three)": 1255,
+      "Flights of": ["2026-05-01", "2026-05-12"]
+    },
+    {
+      "Pilot": "Tom Orsini",
+      "Score (best three)": 955,
+      "Flights of": ["2026-04-26"]
+    },
+    {
+      "Pilot": "Phil Gaisford",
+      "Score (best three)": 760,
+      "Flights of": ["2026-04-24"]
+    },
+    {
+      "Pilot": "John Beckley",
+      "Score (best three)": 671,
+      "Flights of": ["2026-06-16"]
+    },
+    {
+      "Pilot": "Emilie Phillips",
+      "Score (best three)": 635,
+      "Flights of": ["2026-06-16"]
+    },
+    {
+      "Pilot": "Chris Stokes",
+      "Score (best three)": 564,
+      "Flights of": ["2026-06-03"]
+    }
+  ],
+  "flights_grouped_by_pilot": {
+    "Cathy Keller": [
+      {
+        "Pilot": "Cathy Keller",
+        "Date": "2026-05-01",
+        "Glider": "ASG 29 18",
+        "Start": "12:20:25",
+        "TOC": "04:31:22",
+        "H'capped Distance": 130.95,
+        "H'capped Speed": 28.95,
+        "Score": 531
+      },
+      {
+        "Pilot": "Cathy Keller",
+        "Date": "2026-05-12",
+        "Glider": "ASG 29 18",
+        "Start": "11:43:36",
+        "TOC": "02:41:09",
+        "H'capped Distance": 106.05,
+        "H'capped Speed": 39.48,
+        "Score": 724
+      }
+    ],
+    "Chris Stokes": [
+      {
+        "Pilot": "Chris Stokes",
+        "Date": "2026-06-03",
+        "Glider": "LS8-18",
+        "Start": "12:58:46",
+        "TOC": "03:22:59",
+        "H'capped Distance": 104.03,
+        "H'capped Speed": 30.75,
+        "Score": 564
+      }
+    ],
+    "David Joyce": [
+      {
+        "Pilot": "David Joyce",
+        "Date": "2026-04-21",
+        "Glider": "Ventus 2C-18",
+        "Start": "12:47:21",
+        "TOC": "02:42:13",
+        "H'capped Distance": 102.16,
+        "H'capped Speed": 36.58,
+        "Score": 671
+      },
+      {
+        "Pilot": "David Joyce",
+        "Date": "2026-04-24",
+        "Glider": "Ventus 2C-18",
+        "Start": "12:38:19",
+        "TOC": "03:10:05",
+        "H'capped Distance": 116.8,
+        "H'capped Speed": 35.69,
+        "Score": 655
+      },
+      {
+        "Pilot": "David Joyce",
+        "Date": "2026-05-12",
+        "Glider": "Ventus 2C-18",
+        "Start": "11:34:27",
+        "TOC": "02:36:23",
+        "H'capped Distance": 131.08,
+        "H'capped Speed": 48.69,
+        "Score": 893
+      },
+      {
+        "Pilot": "David Joyce",
+        "Date": "2026-06-16",
+        "Glider": "Ventus 2C-15",
+        "Start": "11:58:07",
+        "TOC": "03:45:45",
+        "H'capped Distance": 166.62,
+        "H'capped Speed": 44.28,
+        "Score": 812
+      },
+      {
+        "Pilot": "David Joyce",
+        "Date": "2026-06-24",
+        "Glider": "Ventus 2C-18",
+        "Start": "12:56:49",
+        "TOC": "02:35:06",
+        "H'capped Distance": 109.43,
+        "H'capped Speed": 42.33,
+        "Score": 776
+      }
+    ],
+    "David Sherrill": [
+      {
+        "Pilot": "David Sherrill",
+        "Date": "2026-04-24",
+        "Glider": "ASW-28",
+        "Start": "12:54:37",
+        "TOC": "02:08:48",
+        "H'capped Distance": 95.97,
+        "H'capped Speed": 38.94,
+        "Score": 714
+      },
+      {
+        "Pilot": "David Sherrill",
+        "Date": "2026-06-24",
+        "Glider": "ASW-28",
+        "Start": "12:22:21",
+        "TOC": "02:33:46",
+        "H'capped Distance": 101.89,
+        "H'capped Speed": 36.38,
+        "Score": 667
+      }
+    ],
+    "Emilie Phillips": [
+      {
+        "Pilot": "Emilie Phillips",
+        "Date": "2026-06-16",
+        "Glider": "ASW-27",
+        "Start": "11:36:10",
+        "TOC": "04:55:25",
+        "H'capped Distance": 170.61,
+        "H'capped Speed": 34.64,
+        "Score": 635
+      }
+    ],
+    "Eric Foertsch": [
+      {
+        "Pilot": "Eric Foertsch",
+        "Date": "2026-04-24",
+        "Glider": "ASW-27",
+        "Start": "11:54:02",
+        "TOC": "04:17:11",
+        "H'capped Distance": 159.16,
+        "H'capped Speed": 37.13,
+        "Score": 681
+      },
+      {
+        "Pilot": "Eric Foertsch",
+        "Date": "2026-06-16",
+        "Glider": "ASW-27",
+        "Start": "11:42:21",
+        "TOC": "04:10:06",
+        "H'capped Distance": 176.85,
+        "H'capped Speed": 42.43,
+        "Score": 778
+      }
+    ],
+    "Glen Kelley": [
+      {
+        "Pilot": "Glen Kelley",
+        "Date": "2026-04-26",
+        "Glider": "JS3-18",
+        "Start": "12:54:07",
+        "TOC": "02:51:25",
+        "H'capped Distance": 155.78,
+        "H'capped Speed": 54.53,
+        "Score": 1000
+      },
+      {
+        "Pilot": "Glen Kelley",
+        "Date": "2026-06-24",
+        "Glider": "JS3-18",
+        "Start": "12:09:59",
+        "TOC": "02:43:57",
+        "H'capped Distance": 152.33,
+        "H'capped Speed": 48.22,
+        "Score": 884
+      }
+    ],
+    "John Beckley": [
+      {
+        "Pilot": "John Beckley",
+        "Date": "2026-06-16",
+        "Glider": "ASW-19",
+        "Start": "11:35:51",
+        "TOC": "04:52:47",
+        "H'capped Distance": 178.65,
+        "H'capped Speed": 36.61,
+        "Score": 671
+      }
+    ],
+    "Phil Gaisford": [
+      {
+        "Pilot": "Phil Gaisford",
+        "Date": "2026-04-24",
+        "Glider": "Discus 2B",
+        "Start": "11:55:22",
+        "TOC": "04:31:47",
+        "H'capped Distance": 187.72,
+        "H'capped Speed": 41.44,
+        "Score": 760
+      }
+    ],
+    "Tom Orsini": [
+      {
+        "Pilot": "Tom Orsini",
+        "Date": "2026-04-26",
+        "Glider": "LS10-18",
+        "Start": "13:22:58",
+        "TOC": "03:03:21",
+        "H'capped Distance": 159.1,
+        "H'capped Speed": 52.06,
+        "Score": 955
+      }
+    ]
+  },
+  "generated_at": "2026-07-03T14:31:30.416409"
+}
