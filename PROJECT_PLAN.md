@@ -6,7 +6,7 @@ The Greater Boston Soaring Club (GBSC) runs a season-long "Gold Cup" soaring con
 https://www.soargbsc.net/gold_cup_contest
 
 The club's contest manager (Phil) produces scores using the SSA's WinScore application 
-running on Windows computer. The contest manager will periodically export a JSON file reflecting
+running on a Windows computer. The contest manager will periodically export a JSON file reflecting
 the current leaderboard. This project automates the display of that leaderboard on the
 club's Drupal website (soargbsc.net) by fetching the JSON and updating a Drupal page,
 with no manual web-editing step required after the initial setup.
@@ -60,7 +60,7 @@ displays the leaderboard — no modules, no REST API, no external services
   database access. The cron script holds no database passwords or API tokens.
 - **Minimal attack surface** — adds exactly one new thing: a cron job running a small
   script. Same trust model as Drupal's own cron jobs already running on the server.
-- **Self-contained** — no Railway account, no external services, no dependencies beyond
+- **Self-contained** — no external services, no dependencies beyond
   Python standard library + drush.
 
 ## JSON schema
