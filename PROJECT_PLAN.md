@@ -6,8 +6,8 @@ The Greater Boston Soaring Club (GBSC) runs a season-long "Gold Cup" soaring con
 https://www.soargbsc.net/gold_cup_contest
 
 The club's contest manager (Phil) produces scores using the SSA's WinScore application 
-running on Windows computer. The contest manager will periodically export a JSON file reflecting
-the current leaderboard. This project automates the display of that leaderboard on the
+running on Windows computer. The contest manager will periodically export the current
+leaderboard as a JSON file. This project automates the display of that leaderboard on the
 club's Drupal website (soargbsc.net) by fetching the JSON and updating a Drupal page,
 with no manual web-editing step required after the initial setup.
 
@@ -24,7 +24,7 @@ with no manual web-editing step required after the initial setup.
 - Reimplementing WinScore's scoring logic in Python
 - Any changes to the contest manager's existing WinScore workflow
 
-The out-of-scope items were discussed at length. They were descoped because the 
+The out-of-scope items were discussed at length but were descoped because the 
 JSON+cron approach delivers a useful leaderboard with far less development effort.
 A separate planning document exists covering the full scoring app design if that 
 phase is ever revisited.
@@ -50,6 +50,12 @@ Cron job on Drupal host (Python script, runs on a schedule)
 Drupal page (Basic Page node, body field updated in place)
 displays the leaderboard — no modules, no REST API, no external services
 ```
+If the contest manager has ssh access, the leaderboard can be updated
+on demand, instead of waiting for the cron job to run, with something like:
+
+    ssh soargbsc.net 'python3 ~/scripts/update_leaderboard.py'
+
+
 
 ### Why this architecture
 
@@ -60,8 +66,8 @@ displays the leaderboard — no modules, no REST API, no external services
   database access. The cron script holds no database passwords or API tokens.
 - **Minimal attack surface** — adds exactly one new thing: a cron job running a small
   script. Same trust model as Drupal's own cron jobs already running on the server.
-- **Self-contained** — no Railway account, no external services, no dependencies beyond
-  Python standard library + drush.
+- **Self-contained** — no external services, no dependencies beyond Python standard 
+  library + drush.
 
 ## JSON schema
 
@@ -95,11 +101,10 @@ the rendering code rather than trusted from position, to handle ties correctly.
 ```
 
 - `Pilot`: string, pilot's full name
-- `Score (best three)`: integer, sum of pilot's best 3 flight scores (or all flights
-  if fewer than 3 have been submitted)
+- `Score (best three)`: integer, sum of pilot's best 3 flight scores
 - `Flights of`: **array of ISO 8601 date strings** (`YYYY-MM-DD`) — the dates of the
-  flights contributing to the score. Requested as an array (not a comma-separated
-  string) to allow hyperlinking dates to flight detail rows.
+  flights contributing to the score. Requested as an array to allow hyperlinking 
+  dates to flight detail rows.
 
 ### `flights_grouped_by_pilot` (object, keys are pilot names)
 
@@ -121,23 +126,12 @@ All submitted flights for each pilot, including non-scoring flights (i.e. a pilo
 ]
 ```
 
-- `Date`: ISO 8601 date string (`YYYY-MM-DD`) — **consistent format throughout**,
-  both here and in `scoring_summary`. (Note: original sample used `YYYY/MM/DD` here
-  vs `YYYY-MM-DD` in scoring_summary — the contest manager has been asked to
-  normalize to `YYYY-MM-DD` everywhere.)
+- `Date`: ISO 8601 date string (`YYYY-MM-DD`)
 - `Start`: time string `HH:MM:SS` (task start time)
-- `TOC`: time string — format should be consistently `HH:MM:SS` (time on course).
-  Contest manager has been asked to confirm this is always HH:MM:SS and never MM:SS.
+- `TOC`: time string — `HH:MM:SS` (time on course).
 - `H'capped Distance`: float, handicapped distance in status miles
 - `H'capped Speed`: float, handicapped speed in miles per hour
 - `Score`: integer, this flight's individual point score
-
-### Schema change requests (pending contest manager confirmation)
-
-1. ✅ `Flights of` changed from comma-separated string to array of date strings
-2. ✅ Date format normalized to `YYYY-MM-DD` throughout (was `YYYY/MM/DD` in flight
-   detail records)
-3. ⏳ `TOC` format confirmed as always `HH:MM:SS`
 
 ## Leaderboard page design (HTML rendered by cron script)
 
@@ -211,13 +205,21 @@ drush --root=/path/to/drupal --uri=https://www.soargbsc.net \
 Add to the SSH user's crontab (`crontab -e`):
 
 ```
-# Update Gold Cup leaderboard — runs every hour
-0 * * * * /usr/bin/python3 ~/scripts/update_leaderboard.py >> ~/logs/leaderboard.log 2>&1
+# Update Gold Cup leaderboard once per day at 06:15 server time
+15 6 * * * . "$HOME/scripts/leaderboard.env"; /usr/bin/python3 "$HOME/scripts/update_leaderboard.py" >> "$HOME/logs/leaderboard.log" 2>&1
 ```
 
-Frequency (hourly shown above) is a placeholder — adjust to match how often the
-contest manager realistically updates the JSON. Daily would likely suffice given the
-manual WinScore workflow.
+Daily is a reasonable starting point given the expected update pattern. Adjust the
+schedule if the contest manager starts publishing more often.
+
+### Step 4 — Deployment checklist
+
+See [DEPLOYMENT.md](c:\Users\david\Google%20Drive\Soaring\GBSC\GBSC-Gold-Cup-via-WinScore\DEPLOYMENT.md) for the concrete host-side steps, including:
+
+- environment variables consumed by the script
+- preflight dry-run command
+- first live run command
+- cron registration details
 
 ## Open questions
 
@@ -227,7 +229,8 @@ manual WinScore workflow.
    - Google Drive or Dropbox public link (works but URLs can be fragile)
    - Ideal: a stable URL that never changes between updates (same URL, content replaced)
 
-2. **TOC format** — confirm `HH:MM:SS` always, never `MM:SS` (awaiting contest manager)
+~~2. **TOC format** — confirm `HH:MM:SS` always~~
+Confirmed.
 
 3. **Drush root path** — need exact filesystem path to Drupal root on the host
    (e.g. `/var/www/html` or `/home/gbsc/public_html`) to construct drush commands
@@ -237,19 +240,19 @@ manual WinScore workflow.
 ~~5. **Crontab access** — confirm the SSH user can manage their own crontab~~
    ~~(`crontab -e` works without sudo)~~  
    Confirmed.  
-   Issue closed.
 
 ~~6. **Update frequency** — how often does the contest manager plan to publish a new~~
    ~~JSON file? (Determines cron schedule)~~ 
-   At most daily.
+   Updates are rare, but likely just one update on a given day.
 
 ## Files in this repository
 
 ```
-PROJECT_PLAN.md          — this document
+DEPLOYMENT.md            — Drupal host setup and cron instructions
+PROJECT_PLAN.md          — project plan and architecture notes
 scripts/
-  update_leaderboard.py  — cron script (to be written)
-sample/
+  update_leaderboard.py  — cron script that fetches JSON and updates Drupal
+data/
   leaderboard_sample.json — sample JSON from contest manager (for development/testing)
 ```
 
