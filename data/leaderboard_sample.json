@@ -3,55 +3,100 @@
     {
       "Pilot": "David Joyce",
       "Score (best three)": 2481,
-      "Flights of": ["2026-05-12", "2026-06-16", "2026-06-24"]
+      "Flights of": [
+        "2026-05-12",
+        "2026-06-16",
+        "2026-06-24"
+      ]
     },
     {
       "Pilot": "Glen Kelley",
       "Score (best three)": 1884,
-      "Flights of": ["2026-04-26", "2026-06-24"]
+      "Flights of": [
+        "2026-04-26",
+        "2026-06-24"
+      ]
     },
     {
       "Pilot": "Eric Foertsch",
       "Score (best three)": 1459,
-      "Flights of": ["2026-04-24", "2026-06-16"]
+      "Flights of": [
+        "2026-04-24",
+        "2026-06-16"
+      ]
     },
     {
       "Pilot": "David Sherrill",
       "Score (best three)": 1381,
-      "Flights of": ["2026-04-24", "2026-06-24"]
+      "Flights of": [
+        "2026-04-24",
+        "2026-06-24"
+      ]
     },
     {
       "Pilot": "Cathy Keller",
       "Score (best three)": 1255,
-      "Flights of": ["2026-05-01", "2026-05-12"]
+      "Flights of": [
+        "2026-05-01",
+        "2026-05-12"
+      ]
     },
     {
       "Pilot": "Tom Orsini",
       "Score (best three)": 955,
-      "Flights of": ["2026-04-26"]
+      "Flights of": [
+        "2026-04-26"
+      ]
     },
     {
       "Pilot": "Phil Gaisford",
       "Score (best three)": 760,
-      "Flights of": ["2026-04-24"]
+      "Flights of": [
+        "2026-04-24"
+      ]
     },
     {
       "Pilot": "John Beckley",
-      "Score (best three)": 671,
-      "Flights of": ["2026-06-16"]
+      "Score (best three)": 739,
+      "Flights of": [
+        "2026-06-16"
+      ]
     },
     {
       "Pilot": "Emilie Phillips",
-      "Score (best three)": 635,
-      "Flights of": ["2026-06-16"]
+      "Score (best three)": 699,
+      "Flights of": [
+        "2026-06-16"
+      ]
     },
     {
       "Pilot": "Chris Stokes",
       "Score (best three)": 564,
-      "Flights of": ["2026-06-03"]
+      "Flights of": [
+        "2026-06-03"
+      ]
+    },
+    {
+      "Pilot": "A N Other",
+      "Score (best three)": 18,
+      "Flights of": [
+        "2026-07-04"
+      ]
     }
   ],
   "flights_grouped_by_pilot": {
+    "A N Other": [
+      {
+        "Pilot": "A N Other",
+        "Date": "2026-07-04",
+        "Glider": "ASW-28",
+        "Start": "12:12:12",
+        "TOC": "00:47:48",
+        "H'capped Distance": 1.0,
+        "H'capped Speed": 1.0,
+        "Score": 18
+      }
+    ],
     "Cathy Keller": [
       {
         "Pilot": "Cathy Keller",
@@ -169,7 +214,7 @@
         "TOC": "04:55:25",
         "H'capped Distance": 170.61,
         "H'capped Speed": 34.64,
-        "Score": 635
+        "Score": 699
       }
     ],
     "Eric Foertsch": [
@@ -225,7 +270,7 @@
         "TOC": "04:52:47",
         "H'capped Distance": 178.65,
         "H'capped Speed": 36.61,
-        "Score": 671
+        "Score": 739
       }
     ],
     "Phil Gaisford": [
@@ -253,5 +298,5 @@
       }
     ]
   },
-  "generated_at": "2026-07-03T14:31:30.416409"
+  "generated_at": "2026-07-04T14:38:33.584615"
 }

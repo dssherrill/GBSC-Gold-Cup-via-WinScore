@@ -7,7 +7,7 @@ https://www.soargbsc.net/gold_cup_contest
 
 The club's contest manager (Phil) produces scores using the SSA's WinScore application 
 running on Windows computer. The contest manager will periodically export the current
-leaderboard as a JSON file. This project automates the display of that leaderboard on the
+the current leaderboard. This project automates the display of that leaderboard on the
 club's Drupal website (soargbsc.net) by fetching the JSON and updating a Drupal page,
 with no manual web-editing step required after the initial setup.
 
