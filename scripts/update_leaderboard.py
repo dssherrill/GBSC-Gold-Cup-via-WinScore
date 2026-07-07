@@ -261,9 +261,11 @@ def render_html(payload: dict[str, Any]) -> str:
         css_block(),
         "</style>",
         "<section>",
-        f"<p>Last updated: {escape_text(format_generated_at(generated_at))}",
-        "<br>Best 3 flights count toward score.",
-        '<br>Complete rules are on the <A href="https://www.soargbsc.net/gold_cup_contest">Gold Cup Contest page</A></p>',
+        '<div class="gold-cup-meta">',
+        f"<div>Last updated: {escape_text(format_generated_at(generated_at))}</div>",
+        "<div>Best 3 flights count toward score.</div>",
+        '<div>Complete rules are on the <A href="https://www.soargbsc.net/gold_cup_contest">Gold Cup Contest page</A></div>',
+        "</div>",
         "<h2>Standings</h2>",
         '<table class="gold-cup-table standings">',
         "<thead>",
@@ -431,6 +433,14 @@ def css_block() -> str:
 }
 
 .gold-cup-table td.gold-cup-table-text-right { text-align: right; }
+
+.gold-cup-meta {
+    margin-bottom: 1rem;
+}
+
+.gold-cup-meta > div {
+    margin: 0;
+}
 
 .scoring-flight {
   background: #f4fbef;
