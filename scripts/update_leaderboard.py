@@ -267,7 +267,7 @@ def render_html(payload: dict[str, Any]) -> str:
         "<h2>Standings</h2>",
         '<table class="gold-cup-table standings">',
         "<thead>",
-        '<tr><th rowspan="2">Rank</th><th rowspan="2">Pilot</th><th rowspan="2">Score (best 3)</th><th colspan="3">Scoring Flights</th></tr>',
+        '<tr><th rowspan="2">Rank</th><th rowspan="2">Pilot</th><th rowspan="2">Score<br>(best 3)</th><th colspan="3">Scoring Flights</th></tr>',
         "<tr><th>1st</th><th>2nd</th><th>3rd</th></tr>",
         "</thead>",
         "<tbody>",
@@ -289,7 +289,7 @@ def render_html(payload: dict[str, Any]) -> str:
             "<tr>"
             f"<td>{rank}</td>"
             f"<td>{pilot}</td>"
-            f"<td>{score}</td>"
+            f"<td class='gold-cup-table-text-right'>{score}</td>"
             f"{flight_cells}"
             "</tr>"
         )
@@ -319,7 +319,7 @@ def render_html(payload: dict[str, Any]) -> str:
             "</table>",
             "</section>",
             '<footer class="gold-cup-footer">',
-            "<p>Scores computed by WinScore.",
+            "<p>Scores computed by <A href='https://www.gfbyars.com/winscore/'>WinScore</A>.</p>",
             "</footer>",
             "</div>",
         ]
@@ -362,7 +362,7 @@ def render_pilot_rows(
             f"<td>{escape_text(flight['TOC'])}</td>"
             f"<td>{handicapped_distance}</td>"
             f"<td>{handicapped_speed}</td>"
-            f"<td>{flight['Score']}</td>"
+            f"<td class='gold-cup-table-text-right'>{flight['Score']}</td>"
             "</tr>"
         )
     return lines
@@ -425,6 +425,12 @@ def css_block() -> str:
 .gold-cup-table thead {
   background: #eef3f7;
 }
+
+.gold-cup-table-text-right {
+  text-align: right;
+}
+
+.gold-cup-table td.gold-cup-table-text-right { text-align: right; }
 
 .scoring-flight {
   background: #f4fbef;
