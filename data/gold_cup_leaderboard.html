@@ -22,6 +22,17 @@
   background: #eef3f7;
 }
 
+.gold-cup-table.standings thead tr:first-child th:last-child {
+    text-align: center;
+}
+
+.gold-cup-table.standings thead tr:nth-child(2) th,
+.gold-cup-table.standings tbody td:nth-child(4),
+.gold-cup-table.standings tbody td:nth-child(5),
+.gold-cup-table.standings tbody td:nth-child(6) {
+    text-align: center;
+}
+
 .gold-cup-table-text-right {
   text-align: right;
 }
@@ -57,7 +68,7 @@
 <h2>Standings</h2>
 <table class="gold-cup-table standings">
 <thead>
-<tr><th rowspan="2">Rank</th><th rowspan="2">Pilot</th><th rowspan="2">Score<br>(best 3)</th><th colspan="3">Scoring Flights</th></tr>
+<tr><th rowspan="2">Rank</th><th rowspan="2">Pilot</th><th rowspan="2">Score</th><th colspan="3">Best 3 Flights</th></tr>
 <tr><th>1st</th><th>2nd</th><th>3rd</th></tr>
 </thead>
 <tbody>
