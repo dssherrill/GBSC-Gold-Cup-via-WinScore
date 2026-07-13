@@ -18,6 +18,14 @@
       ]
     },
     {
+      "Pilot": "John Beckley",
+      "Score (best three)": 1615,
+      "Flights of": [
+        "2026-06-16",
+        "2026-07-12"
+      ]
+    },
+    {
       "Pilot": "Eric Foertsch",
       "Score (best three)": 1459,
       "Flights of": [
@@ -53,13 +61,6 @@
       "Score (best three)": 760,
       "Flights of": [
         "2026-04-24"
-      ]
-    },
-    {
-      "Pilot": "John Beckley",
-      "Score (best three)": 739,
-      "Flights of": [
-        "2026-06-16"
       ]
     },
     {
@@ -252,6 +253,16 @@
         "H'capped Distance": 178.65,
         "H'capped Speed": 36.61,
         "Score": 739
+      },
+      {
+        "Pilot": "John Beckley",
+        "Date": "2026-07-12",
+        "Glider": "ASW-19",
+        "Start": "12:00:17",
+        "TOC": "03:18:47",
+        "H'capped Distance": 158.28,
+        "H'capped Speed": 47.77,
+        "Score": 876
       }
     ],
     "Phil Gaisford": [
@@ -279,5 +290,5 @@
       }
     ]
   },
-  "generated_at": "2026-07-04T14:38:33.584615"
+  "generated_at": "2026-07-13T18:31:28.053486"
 }
