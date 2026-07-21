@@ -10,6 +10,24 @@
       ]
     },
     {
+      "Pilot": "Eric Foertsch",
+      "Score (best three)": 2120,
+      "Flights of": [
+        "2026-04-24",
+        "2026-06-16",
+        "2026-07-20"
+      ]
+    },
+    {
+      "Pilot": "David Sherrill",
+      "Score (best three)": 2080,
+      "Flights of": [
+        "2026-04-24",
+        "2026-06-24",
+        "2026-07-20"
+      ]
+    },
+    {
       "Pilot": "Glen Kelley",
       "Score (best three)": 1884,
       "Flights of": [
@@ -26,19 +44,11 @@
       ]
     },
     {
-      "Pilot": "Eric Foertsch",
-      "Score (best three)": 1459,
+      "Pilot": "Emilie Phillips",
+      "Score (best three)": 1297,
       "Flights of": [
-        "2026-04-24",
-        "2026-06-16"
-      ]
-    },
-    {
-      "Pilot": "David Sherrill",
-      "Score (best three)": 1381,
-      "Flights of": [
-        "2026-04-24",
-        "2026-06-24"
+        "2026-06-16",
+        "2026-07-20"
       ]
     },
     {
@@ -64,10 +74,10 @@
       ]
     },
     {
-      "Pilot": "Emilie Phillips",
-      "Score (best three)": 699,
+      "Pilot": "Thomas can der Velde",
+      "Score (best three)": 632,
       "Flights of": [
-        "2026-06-16"
+        "2026-07-20"
       ]
     },
     {
@@ -185,6 +195,16 @@
         "H'capped Distance": 101.89,
         "H'capped Speed": 36.38,
         "Score": 667
+      },
+      {
+        "Pilot": "David Sherrill",
+        "Date": "2026-07-20",
+        "Glider": "ASW-28",
+        "Start": "12:28:45",
+        "TOC": "02:59:19",
+        "H'capped Distance": 113.95,
+        "H'capped Speed": 38.13,
+        "Score": 699
       }
     ],
     "Emilie Phillips": [
@@ -197,6 +217,16 @@
         "H'capped Distance": 170.61,
         "H'capped Speed": 34.64,
         "Score": 699
+      },
+      {
+        "Pilot": "Emilie Phillips",
+        "Date": "2026-07-20",
+        "Glider": "ASW-27",
+        "Start": "12:06:05",
+        "TOC": "03:16:28",
+        "H'capped Distance": 106.85,
+        "H'capped Speed": 32.63,
+        "Score": 598
       }
     ],
     "Eric Foertsch": [
@@ -219,6 +249,16 @@
         "H'capped Distance": 176.85,
         "H'capped Speed": 42.43,
         "Score": 778
+      },
+      {
+        "Pilot": "Eric Foertsch",
+        "Date": "2026-07-20",
+        "Glider": "ASW-27",
+        "Start": "12:36:02",
+        "TOC": "02:49:45",
+        "H'capped Distance": 102.04,
+        "H'capped Speed": 36.07,
+        "Score": 661
       }
     ],
     "Glen Kelley": [
@@ -277,6 +317,18 @@
         "Score": 760
       }
     ],
+    "Thomas can der Velde": [
+      {
+        "Pilot": "Thomas can der Velde",
+        "Date": "2026-07-20",
+        "Glider": "ASG 29 18",
+        "Start": "12:08:01",
+        "TOC": "04:36:49",
+        "H'capped Distance": 158.91,
+        "H'capped Speed": 34.44,
+        "Score": 632
+      }
+    ],
     "Tom Orsini": [
       {
         "Pilot": "Tom Orsini",
@@ -290,5 +342,5 @@
       }
     ]
   },
-  "generated_at": "2026-07-15T14:46:50.985565"
+  "generated_at": "2026-07-21T14:52:38.399801"
 }
