@@ -74,7 +74,7 @@
       ]
     },
     {
-      "Pilot": "Thomas can der Velde",
+      "Pilot": "Thomas Van de Velde",
       "Score (best three)": 632,
       "Flights of": [
         "2026-07-20"
@@ -317,9 +317,9 @@
         "Score": 760
       }
     ],
-    "Thomas can der Velde": [
+    "Thomas Van de Velde": [
       {
-        "Pilot": "Thomas can der Velde",
+        "Pilot": "Thomas Van de Velde",
         "Date": "2026-07-20",
         "Glider": "ASG 29 18",
         "Start": "12:08:01",
@@ -342,5 +342,5 @@
       }
     ]
   },
-  "generated_at": "2026-07-21T14:52:38.399801"
+  "generated_at": "2026-07-21T14:57:31.143118"
 }
