@@ -2,11 +2,20 @@
   "scoring_summary": [
     {
       "Pilot": "David Joyce",
-      "Score (best three)": 2481,
+      "Score (best three)": 2515,
       "Flights of": [
         "2026-05-12",
         "2026-06-16",
-        "2026-06-24"
+        "2026-07-25"
+      ]
+    },
+    {
+      "Pilot": "David Sherrill",
+      "Score (best three)": 2146,
+      "Flights of": [
+        "2026-04-24",
+        "2026-07-20",
+        "2026-07-24"
       ]
     },
     {
@@ -15,15 +24,6 @@
       "Flights of": [
         "2026-04-24",
         "2026-06-16",
-        "2026-07-20"
-      ]
-    },
-    {
-      "Pilot": "David Sherrill",
-      "Score (best three)": 2080,
-      "Flights of": [
-        "2026-04-24",
-        "2026-06-24",
         "2026-07-20"
       ]
     },
@@ -41,6 +41,14 @@
       "Flights of": [
         "2026-06-16",
         "2026-07-12"
+      ]
+    },
+    {
+      "Pilot": "Chris Stokes",
+      "Score (best three)": 1300,
+      "Flights of": [
+        "2026-06-03",
+        "2026-07-24"
       ]
     },
     {
@@ -79,13 +87,6 @@
       "Flights of": [
         "2026-07-20"
       ]
-    },
-    {
-      "Pilot": "Chris Stokes",
-      "Score (best three)": 564,
-      "Flights of": [
-        "2026-06-03"
-      ]
     }
   ],
   "flights_grouped_by_pilot": {
@@ -121,6 +122,16 @@
         "H'capped Distance": 104.03,
         "H'capped Speed": 30.75,
         "Score": 564
+      },
+      {
+        "Pilot": "Chris Stokes",
+        "Date": "2026-07-24",
+        "Glider": "LS8-15",
+        "Start": "11:46:13",
+        "TOC": "02:45:51",
+        "H'capped Distance": 110.89,
+        "H'capped Speed": 40.12,
+        "Score": 736
       }
     ],
     "David Joyce": [
@@ -173,6 +184,16 @@
         "H'capped Distance": 109.43,
         "H'capped Speed": 42.33,
         "Score": 776
+      },
+      {
+        "Pilot": "David Joyce",
+        "Date": "2026-07-25",
+        "Glider": "Ventus 2C-18",
+        "Start": "12:53:42",
+        "TOC": "02:41:44",
+        "H'capped Distance": 119.08,
+        "H'capped Speed": 44.18,
+        "Score": 810
       }
     ],
     "David Sherrill": [
@@ -205,6 +226,16 @@
         "H'capped Distance": 113.95,
         "H'capped Speed": 38.13,
         "Score": 699
+      },
+      {
+        "Pilot": "David Sherrill",
+        "Date": "2026-07-24",
+        "Glider": "ASW-28",
+        "Start": "13:19:13",
+        "TOC": "02:38:03",
+        "H'capped Distance": 99.83,
+        "H'capped Speed": 39.98,
+        "Score": 733
       }
     ],
     "Emilie Phillips": [
@@ -265,7 +296,7 @@
       {
         "Pilot": "Glen Kelley",
         "Date": "2026-04-26",
-        "Glider": "JS3-18",
+        "Glider": "JS3-15",
         "Start": "12:54:07",
         "TOC": "02:51:25",
         "H'capped Distance": 155.78,
@@ -342,5 +373,5 @@
       }
     ]
   },
-  "generated_at": "2026-07-21T14:57:31.143118"
+  "generated_at": "2026-07-26T14:36:59.566956"
 }
