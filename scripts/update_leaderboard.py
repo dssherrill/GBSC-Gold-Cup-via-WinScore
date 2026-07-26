@@ -309,10 +309,15 @@ def render_html(payload: dict[str, Any]) -> str:
         ]
     )
 
-    for pilot in sorted(flights_by_pilot, key=str.casefold):
+    for pilot_index, pilot in enumerate(sorted(flights_by_pilot, key=str.casefold)):
         scoring_dates = scoring_dates_for_pilot(summary, pilot)
         sections.extend(
-            render_pilot_rows(pilot, flights_by_pilot[pilot], scoring_dates)
+            render_pilot_rows(
+                pilot,
+                flights_by_pilot[pilot],
+                scoring_dates,
+                add_group_separator=True,
+            )
         )
 
     sections.extend(
@@ -337,23 +342,31 @@ def scoring_dates_for_pilot(summary: list[dict[str, Any]], pilot: str) -> set[st
 
 
 def render_pilot_rows(
-    pilot: str, flights: list[dict[str, Any]], scoring_dates: set[str]
+    pilot: str,
+    flights: list[dict[str, Any]],
+    scoring_dates: set[str],
+    *,
+    add_group_separator: bool = False,
 ) -> list[str]:
     lines: list[str] = []
 
     sorted_flights = sorted(flights, key=lambda item: item["Date"], reverse=True)
     for index, flight in enumerate(sorted_flights):
         is_scoring = flight["Date"] in scoring_dates
-        row_class = ' class="scoring-flight"' if is_scoring else ""
+        row_classes: list[str] = []
+        if is_scoring:
+            row_classes.append("scoring-flight")
+        if add_group_separator and index == 0:
+            row_classes.append("pilot-group-start")
+        class_names = " ".join(row_classes)
+        row_class = f' class="{class_names}"' if class_names else ""
         scoring_marker = "Yes" if is_scoring else ""
         anchor = flight_anchor_id(pilot, flight["Date"])
         handicapped_distance = format_decimal(flight["H'capped Distance"])
         handicapped_speed = format_decimal(flight["H'capped Speed"])
         pilot_cell = ""
         if index == 0:
-            pilot_cell = (
-                f'<td rowspan="{len(sorted_flights)}">{escape_text(pilot)}</td>'
-            )
+            pilot_cell = f'<td class="pilot-name-cell" rowspan="{len(sorted_flights)}">{escape_text(pilot)}</td>'
         lines.append(
             f'<tr id="{anchor}"{row_class}>'
             f"{pilot_cell}"
@@ -456,6 +469,15 @@ def css_block() -> str:
 .scoring-flight {
   background: #f4fbef;
   font-weight: 600;
+}
+
+.gold-cup-table.flights tbody tr.pilot-group-start td {
+    border-top: 4px solid #8fa1b3;
+}
+
+.gold-cup-table.flights tbody td.pilot-name-cell {
+    background: #f4fbef;
+    font-weight: 700;
 }
 
 .gold-cup-footer {

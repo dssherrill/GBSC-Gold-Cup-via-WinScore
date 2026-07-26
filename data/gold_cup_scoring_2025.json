@@ -1,0 +1,409 @@
+{
+  "scoring_summary": [
+    {
+      "Pilot": "Steve Paavola",
+      "Score (best three)": 2598,
+      "Flights of": [
+        "2025-05-27",
+        "2025-06-02",
+        "2025-07-22"
+      ]
+    },
+    {
+      "Pilot": "Juan Mandelbaum",
+      "Score (best three)": 2352,
+      "Flights of": [
+        "2025-05-26",
+        "2025-06-03",
+        "2025-08-02"
+      ]
+    },
+    {
+      "Pilot": "David Joyce",
+      "Score (best three)": 2307,
+      "Flights of": [
+        "2025-05-27",
+        "2025-07-22",
+        "2025-08-02"
+      ]
+    },
+    {
+      "Pilot": "Eric Foertsch",
+      "Score (best three)": 2145,
+      "Flights of": [
+        "2025-07-22",
+        "2025-07-28",
+        "2025-08-02"
+      ]
+    },
+    {
+      "Pilot": "Phil Gaisford",
+      "Score (best three)": 1870,
+      "Flights of": [
+        "2025-05-26",
+        "2025-06-03"
+      ]
+    },
+    {
+      "Pilot": "Tyson Sawyer",
+      "Score (best three)": 1458,
+      "Flights of": [
+        "2025-05-27",
+        "2025-07-22"
+      ]
+    },
+    {
+      "Pilot": "Glen Kelley",
+      "Score (best three)": 1365,
+      "Flights of": [
+        "2025-06-03",
+        "2025-08-02"
+      ]
+    },
+    {
+      "Pilot": "Steve Waitekaitis",
+      "Score (best three)": 1262,
+      "Flights of": [
+        "2025-06-03",
+        "2025-08-02"
+      ]
+    },
+    {
+      "Pilot": "David Sherrill",
+      "Score (best three)": 1241,
+      "Flights of": [
+        "2025-07-22",
+        "2025-07-28"
+      ]
+    },
+    {
+      "Pilot": "Nelson Howe",
+      "Score (best three)": 852,
+      "Flights of": [
+        "2025-07-04"
+      ]
+    },
+    {
+      "Pilot": "John Beckley",
+      "Score (best three)": 703,
+      "Flights of": [
+        "2025-05-26"
+      ]
+    }
+  ],
+  "flights_grouped_by_pilot": {
+    "David Joyce": [
+      {
+        "Pilot": "David Joyce",
+        "Date": "2025-04-28",
+        "Glider": "Duo Discus T",
+        "Start": "13:03:51",
+        "TOC": "02:51:28",
+        "H'capped Distance": 85.61,
+        "H'capped Speed": 29.96,
+        "Score": 585
+      },
+      {
+        "Pilot": "David Joyce",
+        "Date": "2025-05-26",
+        "Glider": "Ventus 2c-18",
+        "Start": "12:46:39",
+        "TOC": "03:39:01",
+        "H'capped Distance": 108.01,
+        "H'capped Speed": 29.59,
+        "Score": 578
+      },
+      {
+        "Pilot": "David Joyce",
+        "Date": "2025-05-27",
+        "Glider": "Ventus 2c-18",
+        "Start": "11:53:04",
+        "TOC": "04:58:26",
+        "H'capped Distance": 186.71,
+        "H'capped Speed": 37.54,
+        "Score": 733
+      },
+      {
+        "Pilot": "David Joyce",
+        "Date": "2025-06-03",
+        "Glider": "Ventus 2c-18",
+        "Start": "13:01:44",
+        "TOC": "03:19:48",
+        "H'capped Distance": 84.35,
+        "H'capped Speed": 25.33,
+        "Score": 495
+      },
+      {
+        "Pilot": "David Joyce",
+        "Date": "2025-07-22",
+        "Glider": "Ventus 2c-18",
+        "Start": "11:57:16",
+        "TOC": "04:06:14",
+        "H'capped Distance": 153.08,
+        "H'capped Speed": 37.3,
+        "Score": 728
+      },
+      {
+        "Pilot": "David Joyce",
+        "Date": "2025-07-28",
+        "Glider": "Ventus 2c-18",
+        "Start": "12:58:01",
+        "TOC": "02:36:03",
+        "H'capped Distance": 89.91,
+        "H'capped Speed": 34.57,
+        "Score": 675
+      },
+      {
+        "Pilot": "David Joyce",
+        "Date": "2025-08-02",
+        "Glider": "Ventus 2c-18",
+        "Start": "13:13:21",
+        "TOC": "02:58:20",
+        "H'capped Distance": 128.82,
+        "H'capped Speed": 43.34,
+        "Score": 846
+      },
+      {
+        "Pilot": "David Joyce",
+        "Date": "2025-08-23",
+        "Glider": "Ventus 2c-15",
+        "Start": "12:13:21",
+        "TOC": "03:00:37",
+        "H'capped Distance": 97.59,
+        "H'capped Speed": 32.42,
+        "Score": 633
+      }
+    ],
+    "David Sherrill": [
+      {
+        "Pilot": "David Sherrill",
+        "Date": "2025-07-22",
+        "Glider": "ASW-28",
+        "Start": "12:06:54",
+        "TOC": "02:10:44",
+        "H'capped Distance": 81.05,
+        "H'capped Speed": 37.2,
+        "Score": 609
+      },
+      {
+        "Pilot": "David Sherrill",
+        "Date": "2025-07-28",
+        "Glider": "ASW-28",
+        "Start": "12:53:58",
+        "TOC": "03:04:57",
+        "H'capped Distance": 99.72,
+        "H'capped Speed": 32.35,
+        "Score": 632
+      }
+    ],
+    "Eric Foertsch": [
+      {
+        "Pilot": "Eric Foertsch",
+        "Date": "2025-07-22",
+        "Glider": "ASW-27",
+        "Start": "11:45:35",
+        "TOC": "04:04:59",
+        "H'capped Distance": 174.67,
+        "H'capped Speed": 42.78,
+        "Score": 835
+      },
+      {
+        "Pilot": "Eric Foertsch",
+        "Date": "2025-07-28",
+        "Glider": "ASW-27",
+        "Start": "12:10:53",
+        "TOC": "02:44:09",
+        "H'capped Distance": 109.82,
+        "H'capped Speed": 40.14,
+        "Score": 751
+      },
+      {
+        "Pilot": "Eric Foertsch",
+        "Date": "2025-08-02",
+        "Glider": "ASW-27",
+        "Start": "11:54:33",
+        "TOC": "04:53:47",
+        "H'capped Distance": 187.48,
+        "H'capped Speed": 38.29,
+        "Score": 559
+      }
+    ],
+    "Glen Kelley": [
+      {
+        "Pilot": "Glen Kelley",
+        "Date": "2025-06-03",
+        "Glider": "JS3-18",
+        "Start": "12:08:21",
+        "TOC": "02:35:39",
+        "H'capped Distance": 107.17,
+        "H'capped Speed": 41.31,
+        "Score": 807
+      },
+      {
+        "Pilot": "Glen Kelley",
+        "Date": "2025-08-02",
+        "Glider": "JS3-18",
+        "Start": "11:26:15",
+        "TOC": "05:42:16",
+        "H'capped Distance": 195.32,
+        "H'capped Speed": 34.24,
+        "Score": 558
+      }
+    ],
+    "John Beckley": [
+      {
+        "Pilot": "John Beckley",
+        "Date": "2025-05-26",
+        "Glider": "ASW-24",
+        "Start": "11:36:55",
+        "TOC": "03:26:06",
+        "H'capped Distance": 123.71,
+        "H'capped Speed": 36.01,
+        "Score": 703
+      }
+    ],
+    "Juan Mandelbaum": [
+      {
+        "Pilot": "Juan Mandelbaum",
+        "Date": "2025-05-26",
+        "Glider": "Ventus 2cxFES-18",
+        "Start": "12:06:03",
+        "TOC": "03:16:02",
+        "H'capped Distance": 161.49,
+        "H'capped Speed": 49.43,
+        "Score": 965
+      },
+      {
+        "Pilot": "Juan Mandelbaum",
+        "Date": "2025-06-03",
+        "Glider": "Ventus 2cxFES-18",
+        "Start": "12:06:25",
+        "TOC": "02:43:57",
+        "H'capped Distance": 105.95,
+        "H'capped Speed": 38.78,
+        "Score": 757
+      },
+      {
+        "Pilot": "Juan Mandelbaum",
+        "Date": "2025-08-02",
+        "Glider": "Ventus 2cxFES-18",
+        "Start": "12:13:06",
+        "TOC": "04:37:02",
+        "H'capped Distance": 191.66,
+        "H'capped Speed": 41.51,
+        "Score": 630
+      }
+    ],
+    "Nelson Howe": [
+      {
+        "Pilot": "Nelson Howe",
+        "Date": "2025-07-04",
+        "Glider": "JS3-15",
+        "Start": "11:37:43",
+        "TOC": "04:36:19",
+        "H'capped Distance": 200.93,
+        "H'capped Speed": 43.63,
+        "Score": 852
+      }
+    ],
+    "Phil Gaisford": [
+      {
+        "Pilot": "Phil Gaisford",
+        "Date": "2025-05-26",
+        "Glider": "Discus 2b",
+        "Start": "12:00:00",
+        "TOC": "03:19:22",
+        "H'capped Distance": 170.17,
+        "H'capped Speed": 51.21,
+        "Score": 1000
+      },
+      {
+        "Pilot": "Phil Gaisford",
+        "Date": "2025-06-03",
+        "Glider": "Discus 2b",
+        "Start": "12:06:25",
+        "TOC": "02:40:40",
+        "H'capped Distance": 119.34,
+        "H'capped Speed": 44.57,
+        "Score": 870
+      }
+    ],
+    "Steve Paavola": [
+      {
+        "Pilot": "Steve Paavola",
+        "Date": "2025-05-27",
+        "Glider": "Discus 2C",
+        "Start": "12:28:02",
+        "TOC": "03:49:22",
+        "H'capped Distance": 163.77,
+        "H'capped Speed": 42.84,
+        "Score": 837
+      },
+      {
+        "Pilot": "Steve Paavola",
+        "Date": "2025-06-02",
+        "Glider": "Discus 2C",
+        "Start": "12:39:31",
+        "TOC": "02:33:51",
+        "H'capped Distance": 111.28,
+        "H'capped Speed": 43.4,
+        "Score": 847
+      },
+      {
+        "Pilot": "Steve Paavola",
+        "Date": "2025-07-22",
+        "Glider": "Discus 2C",
+        "Start": "11:55:02",
+        "TOC": "02:35:59",
+        "H'capped Distance": 121.74,
+        "H'capped Speed": 46.83,
+        "Score": 914
+      }
+    ],
+    "Steve Waitekaitis": [
+      {
+        "Pilot": "Steve Waitekaitis",
+        "Date": "2025-06-03",
+        "Glider": "ASW-27",
+        "Start": "12:07:05",
+        "TOC": "02:35:23",
+        "H'capped Distance": 94.58,
+        "H'capped Speed": 36.52,
+        "Score": 713
+      },
+      {
+        "Pilot": "Steve Waitekaitis",
+        "Date": "2025-08-02",
+        "Glider": "ASW-27",
+        "Start": "11:28:54",
+        "TOC": "04:54:48",
+        "H'capped Distance": 174.96,
+        "H'capped Speed": 35.61,
+        "Score": 549
+      }
+    ],
+    "Tyson Sawyer": [
+      {
+        "Pilot": "Tyson Sawyer",
+        "Date": "2025-05-27",
+        "Glider": "ASW-27",
+        "Start": "11:57:19",
+        "TOC": "03:26:29",
+        "H'capped Distance": 134.26,
+        "H'capped Speed": 39.01,
+        "Score": 762
+      },
+      {
+        "Pilot": "Tyson Sawyer",
+        "Date": "2025-07-22",
+        "Glider": "ASW-27",
+        "Start": "12:03:50",
+        "TOC": "02:39:19",
+        "H'capped Distance": 94.69,
+        "H'capped Speed": 35.66,
+        "Score": 696
+      }
+    ]
+  },
+  "generated_at": "2026-07-23T14:45:40.012421"
+}
